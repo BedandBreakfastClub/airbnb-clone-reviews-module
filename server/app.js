@@ -5,10 +5,10 @@ var faker = require('faker');
 var mysql = require('mysql');
 var con = require('./database');
 
-app.use(express.static(__dirname + '/../client/dist'));
+app.use(express.static('public'));
 app.use(bodyParser.json());
 
-app.get('/seed', function(req, res) {
+app.get('/', function(req, res) {
     res.send(seed());
 })
 
@@ -42,6 +42,7 @@ var seed = function() {
 		target--;
 	}
 
+	console.log(reviews[0]);
 	con.query('INSERT INTO reviews (id, listing_id, author, user_id, avatar_url, date, body, flagged) VALUES ?',
 		[reviews], (err, res) => {
 			if(err) throw err;
