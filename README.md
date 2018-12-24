@@ -47,7 +47,7 @@ From within the root directory:
 cp example.config.js db.config.js
 ```
 
-Edit the db.config.js file and replace the YOUR_DB_USERNAME an'YOUR_DB_PASSWORD fields with your MySQL username and password.
+Edit the db.config.js file and replace the 'YOUR_DB_USERNAME' and 'YOUR_DB_PASSWORD' fields with your MySQL username and password.
 
 ### Seeding the database
 
