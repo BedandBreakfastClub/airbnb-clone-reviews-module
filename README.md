@@ -1,4 +1,4 @@
-# AirBnB-Clone Reviews Module
+# AirBnB Clone Reviews Module
 
 > Service responsible for rendering a component clone of Airbnb's Reviews Module.
 
